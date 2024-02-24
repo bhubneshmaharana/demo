@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/day_3.css">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            list-style-type: none;
+            height: 100px;
+            width: 100px;
+            margin: 3vh;
+        }
+        #box_1{
+            background-color: orange;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+</head>
+<body>
+    <ul>
+        <h4> <b>a</b>  : is the alpha channel that can be added to all the coloring format</h4>
+        <li id="box_1" class="box" style="background-color: hsl(0, 100%, 50%);" ;">i am color name</li> <small>we dont prefer using colors using name as different browsers have different hexcode for same color</small>
+        <li class="box" style="background-color: rgb(141, 244, 168);">i am hexcode</li> <small>this is a rgb shorthand value(0-ff) and two letter represent one color </small>
+        <li class="box" style="background-color: rgb(22, 240, 175);">i am rgb</li> <small>0 < red : blue : green < 225 </small>
+        <li class="box" style="background-color: rgba(22, 240, 175, .5);">i am rgb</li> <small>0 < here a reduce the opacity of the color</small>
+        <li class="box" style="background-color: hsl(248, 91%, 64%);">i am hsl</li> <small>hue(0-360 : color wheel) : saturation(intensity) : light(light and dark ration) </small>
+    </ul>
+    <h2>Types of Styling</h2>
+    <h3>NOTE 3:</h3>
+    <p>the inline css has the highest priority bcz its applied at the last <br>
+        then the style tag and sheet priority depends on where u have declared them <br>
+        <small><mark>as the css applied last will overwrite the css spplied by previous one</mark></small></p>
+    <ul>
+        <li>stylesheet</li> <small>write css in a separate css file</small>
+        <li>style tag</li> <small>use the style tag in the head</small>
+        <li>inline</li> <small>use the style property to inject the css</small>
+        <h3>NOTE 2:</h3> 
+        <p>when we use react, then we would require this inline css property to apply conditional css to the elemnts <br>
+        if user logged in show blue color otherwise show grey </p>
+    </ul>
+    <h3>Assinement: Tag Research </h3>
+    <ol>read mdn doc and find there purpose of use
+        <li>blockquote</li>
+        <li>q</li>
+        <li>abbr</li>
+        <li>address</li>
+        <li>cite</li>
+        <li></li>
+    </ol>
+
+</body>
+</html>
